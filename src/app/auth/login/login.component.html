@@ -1,0 +1,24 @@
+<div class="container-background" fxLayout="column" fxLayoutAlign="center center">
+  <div class="container-padding">
+    <div class="container-form" fxLayout="column" fxLayoutAlign=" stretch">
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <span>LOGIN TO YOUR ACCOUNT</span>
+      </div>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+      </mat-form-field>
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <mat-checkbox>Remember Me</mat-checkbox>
+        <span class="spacer"></span>
+        <a class="mat-button">Forgot Password?</a>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <button mat-raised-button color="primary" class="button-login">LOGIN</button>
+      </div>
+    </div>
+  </div>
+</div>
