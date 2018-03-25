@@ -6,6 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { LoginComponent } from './login/login.component';
     MatCheckboxModule,
     MatButtonModule,
     FlexLayoutModule,
+    FormsModule,
     AuthRoutingModule
   ],
   declarations: [LoginComponent]
